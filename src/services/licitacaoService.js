@@ -5,7 +5,7 @@ export default class LicitacaoService {
     try {
       const data = await API.get('/licitacoes');
       await new Promise(resolve => {
-        return setTimeout(() => resolve(''), 2000)
+        return setTimeout(() => resolve(''), 2500)
       })
       return data;
     } catch (error) {
