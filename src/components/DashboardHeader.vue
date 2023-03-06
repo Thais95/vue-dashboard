@@ -29,9 +29,14 @@ export default {
 			align-items: center;
 		}
 		.image {
-			width: 280px;
+			width: 160px;
 			height: auto;
-			margin-left: -30px;
+			margin-left: 26px;
+			-webkit-user-drag: none;
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
 			@media screen and (max-width: 760px) {
 				display: none;
 			}
