@@ -35,25 +35,13 @@ Tecnologias e ferramentas utilizadas
 <br>
 # Para rodar o aplicativo localmente
 
-- Instale as dependências necessárias com os comandos
+- Instale as dependências necessárias com o comando
 
 ```Shell
 # Dentro da pasta do projeto
 
 npm install
 ```
-
-<br>
-
-- Após a instalação, inicie o json-server com o comando
-
-```Shell
-# Dentro da pasta do projeto
-
-json-server --watch db.json
-```
-
-##### Ele irá iniciar e ficará disponível para consulta em ``http://localhost:3000/licitacoes``
 
 <br>
 
