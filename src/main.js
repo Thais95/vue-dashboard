@@ -11,10 +11,12 @@ import Menubar from 'primevue/menubar';
 import MultiSelect from 'primevue/multiselect';
 import Button from 'primevue/button';
 import Dialog from 'primevue/dialog';
+import Dropdown from 'primevue/dropdown';
 
 import 'primevue/resources/themes/md-light-indigo/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
+import './style.css';
 
 const app = createApp(App);
 
@@ -29,5 +31,6 @@ app.component('Column', Column);
 app.component('Menubar', Menubar);
 app.component('MultiSelect', MultiSelect);
 app.component('Dialog', Dialog);
+app.component('Dropdown', Dropdown);
 
 app.mount('#app');
