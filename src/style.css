@@ -35,4 +35,5 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(---secondary);
 }
