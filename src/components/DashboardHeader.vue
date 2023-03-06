@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<h1 class="title">Encontrar <br> <span class="space">Licitações</span></h1>
-		<img class="image" src="../assets/search.svg" alt="Lupa">
+		<img class="image" src="../assets/header.png" alt="Lupa">
 	</header>
 </template>
 
@@ -20,21 +20,39 @@ export default {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		.image {
-			width: 380px;
+		@media screen and (max-width: 760px) {
 			height: auto;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 80px 0;
+			align-items: center;
+		}
+		.image {
+			width: 280px;
+			height: auto;
+			margin-left: -30px;
+			@media screen and (max-width: 760px) {
+				display: none;
+			}
 		}
 		.title {
 			font-family: 'Nunito', sans-serif;
 			font-size: 4rem;
 			font-weight: 900;
-			color: #24285b;
+			color: var(---secondary);
 			cursor: default;
 			user-select: none;
 			text-align: center;
+			@media screen and (max-width: 760px) {
+				font-size: 3.2rem;
+			}
 		}
 		.space {
 			margin-left: 80px;
+			@media screen and (max-width: 760px) {
+				margin: 0;
+			}
 		}
 	}
 </style>

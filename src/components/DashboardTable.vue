@@ -124,10 +124,10 @@
       </Column>
 
       <!-- ÍCONES DE "MAIS INFORMAÇÕES" E "ANEXOS" -->
-      <Column :exportable="false" header="Ações">
+      <Column :exportable="false" header="Mais">
         <template #body="slotProps">
-          <Button icon="pi pi-eye" title="Mais informações" class="p-button-rounded p-button-info" style="width: 38px; height: 38px; margin-bottom: 8px;" @click="verDetalhes(slotProps.data)" />
-          <Button icon="pi pi-paperclip" title="Anexos" class="p-button-rounded p-button-info" style="width: 38px; height: 38px;" @click="verAnexos(slotProps.data.anexos)" />
+          <Button icon="pi pi-eye" title="Mais informações" class="p-button-outlined p-button-info" style="width: 38px; height: 38px; margin-bottom: 8px;" @click="verDetalhes(slotProps.data)" />
+          <Button icon="pi pi-paperclip" title="Anexos" class="p-button-outlined p-button-info" style="width: 38px; height: 38px;" @click="verAnexos(slotProps.data.anexos)" />
         </template>
       </Column>
 

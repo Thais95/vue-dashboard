@@ -3,7 +3,7 @@
   <template #start>
     <div class="start-wrapper">
       <div class="logo-name">
-        <img src="../assets/logo.ico" alt="Logo">
+        <img src="../assets/logo.png" alt="Logo">
         <span>Nome da Empresa</span>
       </div>
       <nav>
@@ -35,6 +35,9 @@ export default {
 .menu {
   height: 80px;
   z-index: 2;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   @media screen and (max-width: 760px) {
     height: auto;
     display: flex;
@@ -56,17 +59,16 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-between !important;
-    gap: 10px;
     cursor: default;
     user-select: none;
     img {
-      width: 34px;
-      height: 34px;
+      width: 64px;
+      height: 64px;
     }
     span {
       font-weight: 500;
       font-size: 1.34rem;
-      color: var(---primary);
+      color: var(---secondary);
     }
   }
   .nav-links {
@@ -88,7 +90,7 @@ export default {
       transition: 0.2s;
       &:hover {
         transition: 0.2s;
-        color: var(---accent);
+        color: var(---primary);
       }
     }
   }
