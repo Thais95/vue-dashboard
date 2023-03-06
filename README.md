@@ -50,7 +50,7 @@ npm install
 ```Shell
 # Dentro da pasta do projeto
 
-json-server --watch src/database/db.json
+json-server --watch db.json
 ```
 
 ##### Ele irá iniciar e ficará disponível para consulta em ``http://localhost:3000/licitacoes``
