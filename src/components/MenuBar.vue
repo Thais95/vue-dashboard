@@ -104,7 +104,7 @@ export default {
     transition: 0.2s;
     &:hover {
       transition: 0.2s;
-      color: var(---accent);
+      color: var(---primary);
     }
   }
 }
