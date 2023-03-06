@@ -1,10 +1,7 @@
 <template>
-  <MainDashboard />
+  <router-view />
 </template>
 
-<script setup>
-import MainDashboard from './pages/MainDashboard.vue';
-</script>
+<script></script>
 
-<style scoped>
-</style>
+<style></style>

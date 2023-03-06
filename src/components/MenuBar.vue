@@ -6,12 +6,12 @@
         <img src="../assets/logo.ico" alt="Logo">
         <span>Nome da Empresa</span>
       </div>
-      <nav class="nav">
+      <nav>
         <ul class="nav-links">
           <li>Início</li>
+          <li class="active">Licitações</li>
           <li>Disputas</li>
-          <li>Minhas Licitações</li>
-          <li>Extra</li>
+          <li>Minha conta</li>
         </ul>
       </nav>
     </div>
@@ -34,6 +34,7 @@ export default {
 <style lang="scss" scoped>
 .menu {
   height: 80px;
+  z-index: 2;
   @media screen and (max-width: 760px) {
     height: auto;
     display: flex;
@@ -68,28 +69,26 @@ export default {
       color: var(---primary);
     }
   }
-  .nav {
-    .nav-links {
-      display: flex;
-      flex-direction: row;
-      gap: 18px;
-      @media screen and (max-width: 760px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-      }
-      li:first-child {
-        color: var(---primary);
-      }
-      li {
-        font-weight: 500;
-        cursor: pointer;
-        color: darken($color: #008cff, $amount: 26);
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    @media screen and (max-width: 760px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .active {
+      color: var(---primary);
+    }
+    li {
+      font-weight: 500;
+      cursor: pointer;
+      color: darken($color: #008cff, $amount: 26);
+      transition: 0.2s;
+      &:hover {
         transition: 0.2s;
-        &:hover {
-          transition: 0.2s;
-          color: var(---accent);
-        }
+        color: var(---accent);
       }
     }
   }
@@ -101,10 +100,6 @@ export default {
     cursor: pointer;
     color: darken($color: #008cff, $amount: 26);
     transition: 0.2s;
-    @media screen and (max-width: 760px) {
-      margin: 0 auto;
-      width: 100%;
-    }
     &:hover {
       transition: 0.2s;
       color: var(---accent);

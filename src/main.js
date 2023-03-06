@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 
+import router from './routes/router';
+
 import PrimeVue from 'primevue/config';
 import InputText from 'primevue/inputtext';
 import Toast from 'primevue/toast';
@@ -22,6 +24,7 @@ const app = createApp(App);
 
 app.use(PrimeVue);
 app.use(ToastService);
+app.use(router);
 
 app.component('Toast', Toast);
 app.component('InputText', InputText);

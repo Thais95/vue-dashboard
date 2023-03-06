@@ -1,9 +1,12 @@
 <template>
   <div class="dashboard-container">
     <DataTable
+      style="border-top: 1px solid #e9e9e9"
      :value="licitacoes.data"
      v-model:filters="filters"
      v-model:expandedRows="expandedRows"
+     collapsedRowIcon="pi pi-angle-down"
+     expandedRowIcon="pi pi-angle-up"
      :loading="loading"
      :rows="4"
      filterDisplay="row"
@@ -165,10 +168,10 @@
       >
         <div class="container-palavras">
           <template
-          v-for="(palavra, index) in licitacao.palavraEncontrada"
+          v-for="(palavraChave, index) in licitacao.palavraEncontrada"
           :key="index"
           >
-            <span class="palavras">{{ palavra }}</span>
+            <span class="palavras" title="Palavra-chave">{{ palavraChave }}</span>
           </template>
         </div>
 
@@ -361,6 +364,13 @@ export default {
       background-color: var(---secondary);
       color: white;
       font-weight: 500;
+      transition: 0.4s;
+      &:hover {
+        transform: translateY(-5px);
+        background-color: var(---primary);
+        transition: 0.4s;
+        cursor: help;
+      }
     }
   }
   .mais-detalhes {
